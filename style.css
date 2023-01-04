@@ -75,6 +75,7 @@ a:link a:visited{
     border:0px;
     margin:0px;
     align-items: center;
+    flex-shrink:1;
 }
 #gumb1 {
     margin-top:5px;
@@ -90,20 +91,23 @@ a:link a:visited{
     border-width: 0px;
 }
 .main2 {
-    padding:100px;
+    padding:0px 100px;
     background-color: white;
 }
 .randominfo{
-    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 .fourimages {
     display:flex;
     justify-content:space-evenly;
     flex-basis:600px;
     flex-grow:0;
-    flex-shrink:0;
+    flex-shrink:0.5;
     gap:0px;
-    
+    padding-bottom: 20px;
 }
 .randomimage {
     width:150px;
@@ -132,7 +136,10 @@ h3 {
 }
 h1 {
     color:#1f2937;
-}
+    padding:0px;
+    margin-bottom:30px;
+    margin-top:30px;
+    }
 .main3 {
     background-color: #e5e7eb;
     padding:30px 230px 20px 270px;
